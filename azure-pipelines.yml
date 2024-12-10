@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseNode@1
+  inputs:
+    version: '16.x'
+- script: echo "Hello, Azure Pipelines!"
+  displayName: 'Run a simple script'
